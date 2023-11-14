@@ -48,7 +48,6 @@ rules:
   - apiGroups:
       - batch
     resources:
-      {{/* supports triggering jobs from UI */}}
       - jobs
     verbs:
       - create
@@ -57,6 +56,5 @@ rules:
     resources:
       - workflows
     verbs:
-      {{/* supports triggering workflows from UI */}}
       - create
 {{- end }}
